@@ -12,7 +12,7 @@
 
 body {
   min-width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   flex-direction: column;
   background-image: url(./assets/FUNDO.png);
   background-size: cover;
@@ -25,7 +25,7 @@ body {
 
 header {
   min-width: 100%;
-  position: absolute;
+  position: sticky;
   top: 0;
   background-color: #eebcb4;
 
@@ -61,7 +61,6 @@ header {
   width: 3rem;
   height: 3rem;
 }
-
 
 #pesquisa {
   display: none;
@@ -154,8 +153,9 @@ nav {
 main {
   width: 100%;
   box-sizing: border-box;
-  min-height: calc(100vh - 41rem);
+  height:calc(100vh - 23.4rem);
   padding: 1rem;
+  border: solid 1px blue;
 
 
   flex: 1;
@@ -165,118 +165,62 @@ main {
   gap: 1rem;
 }
 
-main>.imgs {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10rem;
-}
-
 .imgs>#elaine1 {
-  width: 15rem;
+  width: 14rem;
 }
 
 .imgs>#logo1 {
-  width: 21rem;
-  margin-top: 10rem;
-
+  width: 20rem;
 }
 
 /* Estilização do botão leads */
 
-#leads {
+main a{
   position: relative;
+  z-index: 950;
   display: flex;
-  justify-self: flex-end;
-  align-self: flex-start;
-  margin-top: 6.5rem;
-  right: 2rem;
+  justify-content: flex-start;
+  align-items: flex-end;
+  right: 10rem;
+  bottom: 10rem;
 }
 
-.circulo {
+#leads {
   position: absolute;
-  transform: rotate(105deg);
-  border-radius: 50%;
-  top: 3.5rem;
-
-  transition: 0.5s;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: 900;
 }
 
-
-.circulo ul li {
-  position: absolute;
-  list-style: none;
-  transform: rotate(calc(12deg* var(--i)));
-  transform-origin: 0 5rem;
-  top: 0px;
-  font-weight: 600;
+#leads img {
+  width: 7rem;
 }
 
-
-.circulo ul li span {
-  display: inline-block;
-  font-size: 1rem;
-  color: #784b44;
-}
-
-.desc {
-  display: inline-block;
-  transform: rotate(185deg)
+#leads a{
+  position: relative;
 }
 
 #porc {
   position: absolute;
-  z-index: 1;
-
-  width: 7rem;
-  height: 7rem;
-
-  border-radius: 50%;
-  top: 2.7rem;
-  left: 0rem;
-
-}
-
-#subcirculo {
-  position: absolute;
-  z-index: 2;
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
-
-  left: -1.5rem;
-  top: 1rem;
-
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-}
-
+  bottom: 5.7rem;
+  left: 1rem;
+  }
+  
 
 #porc p {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
   position: absolute;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 500;
   color: #784b44;
   animation: porcentagem 2s steps(3) infinite;
   white-space: nowrap;
-  transform: rotate(254deg);
+
   text-decoration: none;
   overflow: hidden;
-}
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 @keyframes porcentagem {
   from {
@@ -311,6 +255,10 @@ footer {
   gap: 0.5rem;
 }
 
+#slogan{
+  display: none;
+}
+
 .linha {
   width: 100%;
   border: 0.1rem solid #c25f5f31;
@@ -326,7 +274,14 @@ footer {
   padding-left: 0.5rem;
 }
 
+#localizacao a{
+  text-decoration: none;
+  color: #784b44;
+  cursor: pointer;
+}
+
 #footer1>#mapa>iframe {
+  display: none;
   width: 25rem;
   height: 8rem;
   border-radius: 1rem;
@@ -574,9 +529,10 @@ footer {
   /* Estilização do Main */
 
   main {
-    width: 100%;
-    min-height: calc(100vh - 41rem);
-    gap: 0;
+    min-width: 100%;
+    min-height: calc(100vh - 18rem);
+    gap: 10rem;
+    margin-top: 0rem;
   }
 
   /* main{
@@ -594,20 +550,8 @@ footer {
   } */
 
 
-  main>.imgs {
-    margin-top: 7.8rem;
-  }
-
-  /* main > .imgs{
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 11rem;
-  } */
-
   .imgs>#elaine1 {
-    width: 35rem;
+    width: 32rem;
   }
 
   /* .imgs > #elaine1{
@@ -616,9 +560,9 @@ footer {
 
 
   .imgs>#logo1 {
-    width: 60rem;
-    margin-top: 12rem;
-    margin-right: 20rem;
+    width: 50rem;
+    margin-top: 15rem;
+    margin-right: 0rem;
   }
 
   /* .imgs > #logo1{
@@ -628,111 +572,61 @@ footer {
 
   /* Estilização do botão leads */
 
-  #leads {
-    position: relative;
-    display: flex;
-    justify-self: flex-end;
-    align-self: flex-start;
-    top: 6rem;
-    right: 10rem;
+  main a{
+    right: 0rem;
+    bottom: 12rem;
   }
 
-  /* #leads {
+/* main a{
   position: relative;
-  display: flex;
-  justify-self: flex-end;
-  align-self: flex-start;
+  z-index: 950;
+} */
+
+/* #leads {
+  position: absolute;
+  z-index: 900;
+} */
+
+/* #leads img {
+  width: 10rem;
+} */
+
+/* #leads a{
+  position: relative;
+} */
+
+#porc {
+  bottom: 7rem;
+  left: 1.5rem;
+  } 
+
+/* #porc {
+  position: absolute;
   } */
 
-  /* .circulo {
-  position: absolute;
-  transform: rotate(105deg);
-  border-radius: 50%;
-  top: 3.5rem;
-  
-  transition: 0.5s;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-  
-  
-  .circulo ul li {
-  position: absolute;
-  list-style: none;
-  transform: rotate(calc(12deg* var(--i)));
-  transform-origin: 0 5rem;
-  top: 0px;
-  font-weight: 600;
-  }
-  
-  
-  .circulo ul li span {
-  display: inline-block;
-  font-size: 1rem;
-  color: #784b44;
-  }
-  
-  .desc {
-  display: inline-block;
-  transform: rotate(185deg)
-  }
-  
-  #porc {
-  position: absolute;
-  z-index: 1;
-  
-  width: 7rem;
-  height: 7rem;
-  
-  border-radius: 50%;
-  top: 2.7rem;
-  left: 0rem;
-  
-  }
-  
-  #subcirculo {
-  position: absolute;
-  z-index: 2;
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
-  
-  left: -1.5rem;
-  top: 1rem;
-  
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  
-  }
-  
-  
-  #porc p {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+
+/* #porc p {
   position: absolute;
   font-size: 4rem;
   font-weight: 500;
   color: #784b44;
   animation: porcentagem 2s steps(3) infinite;
   white-space: nowrap;
-  transform: rotate(254deg);
+
   text-decoration: none;
   overflow: hidden;
-  }
-  
-  
-  @keyframes porcentagem {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
+
+/* @keyframes porcentagem {
   from {
     width: 0;
   }
-  } */
+} */
 
 
   /* Estilização do rodapé */
@@ -777,6 +671,10 @@ footer {
   gap: 0.5rem;
   } */
 
+  #slogan{
+    display: flex;
+  }
+
   .linha {
     display: none;
   }
@@ -789,25 +687,33 @@ footer {
 
   /* #footer1> #anc-redes{
   display: flex;
-  }
+  }*/
   
-  .redeS{
+    /* .redeS{
   width: 3.6rem;
   padding-left: 0.5rem;
+  }*/
+
+  #footer1> #mapa >iframe{
+    width: 20rem;
+    display: flex;
   }
   
-  #footer1> #mapa >iframe{
+  /* #footer1> #mapa >iframe{
+  display: none;
   width: 25rem;
   height: 8rem;
   border-radius: 1rem;
   } */
 
-
+ #footer2{
+  padding: 0.3rem;
+ }
   /* #footer2{
     background-color: #ac8782;
     font-size: 1.1rem;
     width: 100%;
     } */
 
-  @media(min-width:1024px) {}
 }
+
