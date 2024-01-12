@@ -75,7 +75,8 @@ input {
   padding: 0.5rem;
   border: none;
   outline: none;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 #lupa {
