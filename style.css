@@ -234,7 +234,7 @@ main a{
 footer {
   min-width: 100%;
   background-color: #eebcb4;
-  position: absolute;
+  position: sticky;
   bottom: 0;
   font-size: 1.3rem;
   padding: 0.5rem;
