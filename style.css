@@ -108,6 +108,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+
   margin-top: 1.7rem;
   cursor: pointer;
 }
@@ -125,13 +126,15 @@ nav ul {
   text-align: center;
   background-color: #d69d94;
   list-style-type: none;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-radius: 0.5rem;
   margin-top: 1.7rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .submenu li {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   
 }
 
