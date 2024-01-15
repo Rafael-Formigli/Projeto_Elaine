@@ -11,8 +11,10 @@
 }
 
 body {
+  position: relative;
   min-width: 100vw;
   height: 100vh;
+  z-index: 100;
   flex-direction: column;
   background-image: url(./assets/FUNDO.png);
   background-size: cover;
@@ -28,6 +30,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #eebcb4;
+  
 
   display: flex;
   flex-direction: column;
@@ -91,24 +94,17 @@ input {
 nav {
   background-color: #eebcb4;
   display: none;
-  z-index: 1000;
+  z-index: 1001;
   width: 100vw;
   height: 100vh;
-}
-
-
-#menu {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .titulo_menu {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   margin-top: 1.7rem;
   cursor: pointer;
 }
@@ -120,18 +116,22 @@ nav {
 }
 
 .submenu {
+  
   display: none;
-  position: relative;
   text-align: center;
-  background-color: #eebcb4;
+  background-color: #d69d94;
   list-style-type: none;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-radius: 0.5rem;
   margin-top: 1.7rem;
+
 }
 
 .submenu li {
+  position: relative;
   margin-top: 0.5rem;
+  padding: 0.5rem;
+  z-index: 1000;
+  
   
 }
 
@@ -151,6 +151,7 @@ nav {
 /* Estilização do Main */
 
 main {
+  position: relative;
   width: 100%;
   box-sizing: border-box;
   height:calc(100vh - 23.4rem);
@@ -596,8 +597,8 @@ footer {
 } */
 
 #porc {
-  bottom: 5.8rem;
-  left: 0.9rem;
+  bottom: 7rem;
+  left: 1.5rem;
   } 
 
 /* #porc {
