@@ -4,136 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./teste_Display_Grid.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Playfair:wght@300&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <title>Clínica Dra. Elaine Formigli</title>
-
-    <style>
-
-    </style>
 
 </head>
 
 <body>
+    <div id="container">
+        <header>
+            <div id="itens-header">
 
-    <header>
-        <div id="imgs-header">
-            <div id="simbolo-marca">
-                <img id="submarca" src="./assets/SIMBOLO SEM FUNDO.png"
-                    alt="Simboloda Logo marca de Dr.ª Elaine Formigli, uma letra E e uma letra f alonda formando uma imagem ondulada neste alongamento." />
-            </div>
-
-            <div id="menu-icon" onclick="alternarNav()">
-                <img src="./assets/menu.png" alt="Ícone de menu com três pequenas linhas horizontais">
-            </div>
-
-        </div>
-
-        <nav>
-            <ul>
-                <li class="titulo_menu"><a href="./a_Clinica.html"><strong>A CLÍNICA</strong></a></li>
-                <li class="titulo_menu" onclick="alternarSubMenu(this)"><strong>PROTOCOLOS CAPILARES</strong>
-                    <ul class="submenu">
-                        <li><a href="./microagulhamento_com_Drug_Delivery_Capilar.html">Microagulhamento com Drug
-                                Delivery</a>
-                        </li>
-                        <li><a href="./intradermoterapia.html">Intradermoterapia</a></li>
-                    </ul>
-                </li>
-                <li class="titulo_menu" onclick="alternarSubMenu(this)"><strong>PROTOCOLOS FACIAIS</strong>
-                    <ul class="submenu">
-                        <li><a href="./botox.html">Botox</a></li>
-                        <li><a href="./meso_Botox.html">Meso Botox</a></li>
-                        <li><a href="./skinbooster.html">Skinbooster</a></li>
-                        <li><a href="./rejuvenescimento.html">Rejuvenescimento</a></li>
-                        <li><a href="./melasma.html">Melasma</a></li>
-                        <li><a href="./limpeza_De_Pele.html">Limpeza de Pele</a></li>
-                        <li><a href="./microagulhamento_Com_Drug_Delivery_Facial.html">Microagulhamento com Drug
-                                Delivery</a></li>
-                        <li><a href="./bioestimulador_De_Colageno_Facial.html">Bioestimulador de Colágeno</a></li>
-                        <li><a href="./preenchimento.html">Preenchimento</a></li>
-                    </ul>
-                </li>
-                <li class="titulo_menu" onclick="alternarSubMenu(this)"><strong>PROTOCOLOS CORPORAIS</strong>
-                    <ul class="submenu">
-                        <li><a href="./lipoenzimatica_Gordura_Localizada.html">Lipoenzimática, Gordura
-                                Localizada</a></li>
-                        <li><a href="estrias.html">Estrias</a></li>
-                        <li><a href="./celulite.html">Celulite</a></li>
-                        <li><a href="./emagrecimento.html">Emagrecimento</a></li>
-                        <li><a href="./alta_Performance.html">Alta Performance</a></li>
-                        <li><a href="./gluteo_Max.html">Glúteo Max</a></li>
-                        <li><a href="./lipo_De_Papada.html">Lipo de Papada</a></li>
-                        <li><a href="./flacidez.html">Flacidez</a></li>
-                        <li><a href="./Bioestimulador de Colágeno_Corporal.html">Bioestimulador de Colágeno</a></li>
-                    </ul>
-                </li>
-                <li class="titulo_menu"><a href="./linha_De_Produtos.html"> <strong>LINHA DE PRODUTOS</strong></a>
-                </li>
-                <li class="titulo_menu"><a href="./promocoes.html"> <strong>PROMOÇÕES</strong></a></li>
-            </ul>
-        </nav>
-
-        <div id="pesquisa">
-            <input type="text" class="search-txt" name="pesquisa" placeholder="O que você procura?">
-            <img id="lupa" src="./assets/LOUPE.svg" alt="Lupa">
-        </div>
-    </header>
-
-    <main>
-        <div class="imgs">
-            <img id="elaine1" src="./assets/elaine_foto_um.png" alt="">
-        </div>
-        <div class="imgs">
-            <img id="logo1" src="./assets/LOGO-1.png" alt="">
-        </div>
-
-        <a href="https://www.google.com.br">
-            <div id="leads">
-                <img src="./assets/btn-leads.png"
-                    alt="Link Clicável com um texto escrito GANHE DESCONTO e com duas estrelas no início e final decada palavra. No meio pisca a porcentagem 10%.">
-                <div id="porc">
-                    <p><strong>10%</strong></p>
+                <div id="simbolo-marca">
+                    <img id="submarca" src="./assets/SIMBOLO SEM FUNDO.png"
+                        alt="Simboloda Logo marca de Dr.ª Elaine Formigli, uma letra E e uma letra f alonda formando uma imagem ondulada neste alongamento." />
                 </div>
-            </div>
-        </a>
-    </main>
 
-    <footer>
-        <div id="footer-container">
+                <div id="menu-icon" onclick="alternarNav()">
+                    <img id="menu-B" src="./assets/menu.png" alt="Ícone de menu com três pequenas linhas horizontais">
+                </div>
+
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="titulo_menu"><a href="./a_Clinica.html"><strong>A CLÍNICA</strong></a></li>
+                    <li class="titulo_menu" onclick="alternarSubMenu(this)"><strong>PROTOCOLOS CAPILARES</strong>
+                        <ul class="submenu">
+                            <li><a href="./microagulhamento_com_Drug_Delivery_Capilar.html">Microagulhamento com Drug Delivery</a>
+                            </li>
+                            <li><a href="./intradermoterapia.html">Intradermoterapia</a></li>
+                        </ul>
+                    </li>
+                    <li class="titulo_menu" onclick="alternarSubMenu(this)"><strong>PROTOCOLOS FACIAIS</strong>
+                        <ul class="submenu">
+                            <li><a href="./botox.html">Botox</a></li>
+                            <li><a href="./meso_Botox.html">Meso Botox</a></li>
+                            <li><a href="./skinbooster.html">Skinbooster</a></li>
+                            <li><a href="./rejuvenescimento.html">Rejuvenescimento</a></li>
+                            <li><a href="./melasma.html">Melasma</a></li>
+                            <li><a href="./limpeza_De_Pele.html">Limpeza de Pele</a></li>
+                            <li><a href="./microagulhamento_Com_Drug_Delivery_Facial.html">Microagulhamento com Drug
+                                    Delivery</a></li>
+                            <li><a href="./bioestimulador_De_Colageno_Facial.html">Bioestimulador de Colágeno</a></li>
+                            <li><a href="./preenchimento.html">Preenchimento</a></li>
+                        </ul>
+                    </li>
+                    <li class="titulo_menu" onclick="alternarSubMenu(this)"><strong>PROTOCOLOS CORPORAIS</strong>
+                        <ul class="submenu">
+                            <li><a href="./lipoenzimatica_Gordura_Localizada.html">Lipoenzimática, Gordura
+                                    Localizada</a></li>
+                            <li><a href="estrias.html">Estrias</a></li>
+                            <li><a href="./celulite.html">Celulite</a></li>
+                            <li><a href="./emagrecimento.html">Emagrecimento</a></li>
+                            <li><a href="./alta_Performance.html">Alta Performance</a></li>
+                            <li><a href="./gluteo_Max.html">Glúteo Max</a></li>
+                            <li><a href="./lipo_De_Papada.html">Lipo de Papada</a></li>
+                            <li><a href="./flacidez.html">Flacidez</a></li>
+                            <li><a href="./Bioestimulador de Colágeno_Corporal.html">Bioestimulador de Colágeno</a></li>
+                        </ul>
+                    </li>
+                    <li class="titulo_menu"><a href="./linha_De_Produtos.html"> <strong>LINHA DE PRODUTOS</strong></a>
+                    </li>
+                    <li class="titulo_menu"><a href="./promocoes.html"> <strong>PROMOÇÕES</strong></a></li>
+                </ul>
+            </nav>
+
+            <div id="pesquisa">
+                <input type="text" name="pesquisa" placeholder="O que você procura?">
+                <img id="lupa" src="./assets/LOUPE.svg" alt="Lupa">
+            </div>
+
+        </header>
+
+        <section>
+            <a href="https://www.google.com.br">
+                <div id="leads">
+                    <img src="./assets/btn-leads.png"
+                        alt="Link Clicável com um texto escrito GANHE DESCONTO e com duas estrelas no início e final decada palavra. No meio pisca a porcentagem 10%.">
+                    <div id="porc">
+                        <p><strong>10%</strong></p>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <main>
+            <article id="ing1">
+                <img id="elaine1" src="./assets/elaine_foto_um.png" alt="">
+            </article>
+
+            <div id="ing2">
+                <img id="logo1" src="./assets/LOGO-1.png" alt="">
+            </div>
+        </main>
+
+        <footer>
             <div id="footer1">
                 <div id="slogan">
                     <p><strong>Clínica Dr.ª Elaine Formigli</strong><br> Um toque a mais em sua beleza</p>
                 </div>
-                <hr class="linha">
-                <div id="redes-sociais">
+
+                <div id="fale_Conosco">
                     <p><strong>FALE CONOSCO</strong><br></p>
                     <p><strong>E-mail:</strong> Toque_de_Bepleza@linda.com<br></p>
                     <p><strong>Contato:</strong> (71) 9.9975-3232</p>
                 </div>
-                <div id="anc-redes">
-                    <div>
-                        <span><a href="https://www.facebook.com"><img class="redeS" src="./assets/FACEBOOK.svg"
-                                    alt="Imagem do Icone do Facebook"></a></span>
+
+                <div id="anc_Redes">
+                    <div id="instagram">
+                        <a href="https://www.instagram.com"><img class="redeS" src="./assets/INSTAGRAM.svg"
+                                alt="Imagem do Icone do Instagram"></a>
                     </div>
 
-                    <div>
-                        <span><a href="https://www.instagram.com"><img class="redeS" src="./assets/INSTAGRAM.svg"
-                                    alt="Imagem do Icone do Instagram"></a></span>
+                    <div id="whatsapp">
+                        <a href="https://web.whatsapp.com/"><img class="redeS" src="./assets/WHATSAPP.svg"
+                                alt="Imagem do Icone do whatsapp"></a>
                     </div>
 
-                    <div>
-                        <span><a href="https://web.whatsapp.com/"><img class="redeS" src="./assets/WHATSAPP.svg"
-                                    alt="Imagem do Icone do whatsapp"></a></span>
+                    <div id="face_Book">
+                        <a href="https://www.facebook.com"><img class="redeS" src="./assets/FACEBOOK.svg"
+                                alt="Imagem do Icone do Facebook"></a>
                     </div>
                 </div>
-                <hr class="linha">
+
                 <div id="localizacao">
                     <a href="https://maps.app.goo.gl/tbvTuzCrUdQwDADv9">
                         <p><strong>LOCALIZAÇÃO</strong></p>
@@ -141,24 +140,24 @@
                         <p><strong></strong>Cep: 41810-012 - Sala 502.</strong></p>
                     </a>
                 </div>
+
                 <div id="mapa">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d124408.46646244856!2d-38.450283!3d-12.986904!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161b724c75da69%3A0xebcdb56d591c5b4e!2sCondom%C3%ADnio%20Edif%C3%ADcio%20Premier%20Tower%20Empresarial!5e0!3m2!1spt-BR!2sbr!4v1703202530307!5m2!1spt-BR!2sbr"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
+
             </div>
 
             <div id="footer2">
-                <div>
-                    <p><strong>&copy; Rafael Formigli Programação.</strong></p>
-                </div>
+                <p><strong>&copy; Rafael Formigli Programação.</strong></p>
             </div>
-        </div>
-    </footer>
+        </footer>
 
+    </div>
 
-    <script src="./script.js">
+    <script src="./script_teste_Display_Grid.js">
 
     </script>
 </body>
