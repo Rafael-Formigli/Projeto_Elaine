@@ -4,7 +4,7 @@ var ultimoTituloMenuClicado = null;
         var nav = document.querySelector('nav');
         var header = document.querySelector('header');
 
-        if (nav) {
+        if (nav && header) {
             nav.style.display = (nav.style.display === 'none') ? 'block' : 'none'; 
 
             // Fecha o submenu ao clicar no menu principal
