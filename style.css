@@ -129,6 +129,7 @@ header{
     flex-direction: column;
 
     margin-top: 1.5rem;
+    font-size: 1.4rem;
     cursor: pointer;
   }
   
@@ -552,6 +553,7 @@ footer{
       .submenu {
         position: absolute;
         padding-top: 1.6rem;
+        background-color:#eebcb4;
       }
       
       /* .submenu {
