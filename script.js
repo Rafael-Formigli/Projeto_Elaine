@@ -1,19 +1,21 @@
 var ultimoTituloMenuClicado = null;
 
-        function alternarNav() {
-            var nav = document.querySelector('nav');
-            if (nav) {
-                nav.style.display = (nav.style.display === 'none') ? 'block' : 'none';
+    function alternarNav() {
+        var nav = document.querySelector('nav');
+        var header = document.querySelector('header');
 
-                // Fecha o submenu ao clicar no menu principal
-                if (ultimoTituloMenuClicado) {
-                    var ultimoSubMenu = ultimoTituloMenuClicado.querySelector('.submenu');
-                    if (ultimoSubMenu) {
-                        ultimoSubMenu.style.display = 'none';
-                    }
+        if (nav) {
+            nav.style.display = (nav.style.display === 'none') ? 'block' : 'none'; 
+
+            // Fecha o submenu ao clicar no menu principal
+            if (ultimoTituloMenuClicado) {
+                var ultimoSubMenu = ultimoTituloMenuClicado.querySelector('.submenu');
+                if (ultimoSubMenu) {
+                    ultimoSubMenu.style.display = 'none';
                 }
             }
         }
+    }
 
         function alternarSubMenu(tituloMenuClicado) {
             var nav = document.querySelector('nav');
