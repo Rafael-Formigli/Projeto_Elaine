@@ -44,15 +44,8 @@ header{
     grid-area: header;   
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#itens-header{
-    display: flex;
     justify-content: space-around;
     align-items: center;
-    gap:10rem
 }
 
 #simbolo-marca{
@@ -119,7 +112,7 @@ header{
     top: 6rem; 
     left: 0; 
     text-align: center;
-    z-index: 1000; 
+    z-index: 1000;
   } 
     
   
@@ -129,7 +122,6 @@ header{
     flex-direction: column;
 
     margin-top: 1.5rem;
-    font-size: 1.4rem;
     cursor: pointer;
   }
   
@@ -175,7 +167,7 @@ section{
     justify-content: end;
     align-items: flex-start;
 }
-  
+
   
   #leads img {
     width: 8.5rem;
@@ -216,38 +208,49 @@ main{
 
     grid-area: main;
     grid-template-areas: 
-                        "foto1 logo1"; 
-    grid-template-columns: 100rem 100rem;
-    grid-template-rows: 1fr;
+                        "foto1"
+                        "logo1"; 
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
 
     display: flex;
-    flex:1;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+     
+  }
 
-#ing1{
+.ing1{
 grid-area: foto1;
 }
 
-#ing1>#elaine1{
+.ing1>#elaine1{
+    display: none;
     width: 17rem;
+}
+
+.ing1>#elaine2{
+  width: 20rem;
+  margin-top: 1rem;
 }
 
 #ing2{
     grid-area: logo1;
 
+    background-color: rgba(242, 195, 202, 0.722);    
+    box-shadow: 0px 0px 30px 30px rgba(242, 195, 202, 0.722);
+    border-radius: 10%;
 }
 
 #ing2>#logo1{
-    width: 18rem;
+    width: 28rem;
+    margin-bottom: 1rem;
 }
 
 /* Estilização do footer */
 
 footer{
-    gap:0.5rem;
-    background-color:#f29b9082;
+    background-color:#eebcb4;
 
     grid-area: footer;
     grid-template-areas: 
@@ -263,7 +266,7 @@ footer{
 }
 
 #footer1{
-    gap:0.5rem;
+
     grid-area: footer1;
     grid-template-areas: 
                         "slogan fale_Conosco anc_Redes localizacao mapa";
@@ -272,7 +275,7 @@ footer{
 
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
@@ -340,33 +343,23 @@ footer{
     width: 25rem;
     height: 9.3rem;
     border-radius: 5%;
+    margin-bottom: 0.5rem;
 }
 
 
 #footer2{
     width: 100%;   
     background-color: #ac878282;
-    position: relative;
-
-    grid-area: footer2;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    
+
+    grid-area: footer2;   
 }
 
 #footer2>p{
     font-size: 0.8rem;
-
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
 }
 
-@media(min-width:1024px){
+@media screen and (min-width:1024px){
 
     /* body{
         width: 100vw;
@@ -410,19 +403,6 @@ footer{
     
         background-color:#f29b9082; 
     
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    } */
-    
-     #itens-header{
-        justify-content: space-between;
-        padding-left: 2rem;
-
-    }
-
-    /* #itens-header{
-        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -500,16 +480,16 @@ footer{
     /* Estilização da NavBar */
     
     nav{
-        height: 0;        
-        top: 0; 
-        left: 0;
-        font-size: 1.2rem;
-
         display: flex;
-
         justify-content: center;
         align-items: center;
+        text-align: center;
+        
         position: relative;
+        width: 100vw;
+        height: 5rem;
+        top: 0rem;
+        z-index: 1000; 
       } 
       
       /* nav{
@@ -534,6 +514,7 @@ footer{
       .titulo_menu{
         display: flex;
         flex-direction: row;
+        font-size: 1.3rem;
       }
 
       /* .titulo_menu{
@@ -549,6 +530,8 @@ footer{
         text-decoration: none;
         color: #784b44;
       } */
+
+      
       
       .submenu {
         position: absolute;
@@ -654,8 +637,9 @@ footer{
       } */
 
     main{
-        gap:5rem;
+      display: flex;
         justify-content: center;
+        flex-direction: row;        
     }
     /* main{
         gap:10rem;
@@ -676,29 +660,36 @@ footer{
     grid-area: foto1;
     } */
 
-    #ing1>#elaine1{
-        width: 32rem;
-        margin-top: 5.5rem;   
-    }
-    
-    /* #ing1>#elaine1{
-        width: 250%;
-    
-    } */
-    
-    /* #ing2{
-        grid-area: logo1;    
-    } */
-    
-    #ing2>#logo1{    
-        width: 44rem;
-        margin-top: 10rem;
-    }
+    .ing1>#elaine1{
+      display: flex;
+      width: 30rem;
+      margin-top: 9rem;
+      margin-right: 15rem;
 
-    /* #ing2>#logo1{
-    
-        width: 100%;
-    } */
+  }
+  
+  .ing1>#elaine2{
+    display: none;
+    width: 28.5rem;
+  }
+  
+  #ing2{
+    margin-top: 15rem;
+  }
+  /* #ing2{
+      grid-area: logo1;
+  
+      background-color: rgb(242, 195, 202);    
+      box-shadow: 0px 0px 30px 30px rgb(242, 195, 202);
+  } */
+
+  #ing2>#logo1{
+    width: 50rem;
+}
+  
+  /* #ing2>#logo1{
+      width: 29rem;
+  } */
     
     /* Estilização do footer */
 
@@ -831,10 +822,7 @@ footer{
         border-radius: 5%;
     } */
 
-    #footer2{ 
-        position: sticky;
-        bottom: 0;
-    }
+
     /* #footer2{ 
         width: 100%;   
         background-color: #ac878282;
@@ -852,7 +840,6 @@ footer{
     #footer2>p{
         font-size: 1rem;
         position: relative;
-        bottom: 0;
         padding: 0.3rem;
     }
     
