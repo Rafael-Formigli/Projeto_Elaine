@@ -177,10 +177,13 @@ main{
   }
 
   #container-leads{
+    position: relative;
+    top:2rem;
     display: flex;
     justify-self: flex-end;
     align-self: flex-end;
     z-index: 1000;
+
   }
 
   #leads img {
