@@ -111,7 +111,7 @@ header{
     top: 6rem; 
     left: 0; 
     text-align: center;
-    z-index: 1000;
+    z-index: 1001;
   } 
     
   
@@ -162,28 +162,28 @@ header{
 
 
 main{
-
+    width: 100%;
     grid-area: main;
     grid-template-areas: 
+                        "leads"
                         "foto1"
                         "logo1"; 
     grid-template-columns: auto;
-    grid-template-rows: auto 1fr;
+    grid-template-rows:auto auto auto;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;     
+    align-items: center;
+    grid-gap: 2rem;
   }
 
   #container-leads{
-    position: relative;
-    top:2rem;
+    grid-area: leads;
     display: flex;
-    justify-self: flex-end;
     align-self: flex-end;
+    justify-self: flex-start;
     z-index: 1000;
-
   }
 
   #leads img {
@@ -231,8 +231,7 @@ grid-area: foto1;
 }
 
 .ing1>#elaine2{
-  width: 29rem;
-  margin-top: 2rem;
+  width: 30rem;
 }
 
 #ing2{
@@ -489,7 +488,7 @@ footer{
         width: 100vw;
         height: 5rem;
         top: 0rem;
-        z-index: 1000; 
+        
       } 
       
       /* nav{
@@ -569,78 +568,16 @@ footer{
         justify-content: center;
         align-items: center;
       } */
+
     
       /* Estilização do Main */
-
     
-    /* section{
-        grid-area: section;
-    
-        padding: 1rem;
-    
-        display: flex;
-        justify-content: end;
-        align-items: flex-start;
-    } */
-    
-      
-      /* #leads {
-        position: relative;
-    
-        display: flex;
-        justify-self: flex-end;
-        align-self: flex-end;
-      } */
-      
-      #leads img {
-        margin-right: 10rem;
-      }
-      
-      /* #leads img {
-        width: 8.5rem;
-      } */
-      
-      /* #porc {
-        position: absolute;
-        } */
-      
-        #porc p {
-            font-size: 3.7rem;
-            bottom: 9.8rem;
-            left: 3.8rem;
-          }
-
-      /* #porc p {
-        position: relative;
-        font-size: 3.5rem;
-        font-weight: 500;
-        color: #784b44;
-        animation: porcentagem 2s steps(3) infinite;
-        white-space: nowrap;
-    
-        top:2.2rem;
-        left: 1.3rem;
-      
-        text-decoration: none;
-        overflow: hidden;
-      
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      } */
-      
-      /* @keyframes porcentagem {
-        from {
-          width: 0;
-        }
-      } */
 
     main{
-      display: flex;
-        justify-content: center;
-        flex-direction: row;        
+        flex-direction: row;       
     }
+
+
     /* main{
         gap:10rem;
         padding: 2rem;
@@ -655,6 +592,48 @@ footer{
         justify-content: space-around;
         align-items: center;
     } */
+
+    #container-leads{
+
+      display: flex;
+      justify-self: flex-start;
+      align-self: flex-start;
+
+    }
+  
+    #leads img {
+      width: 8.5rem;
+    }
+    
+    #porc {
+      position: absolute;
+      }
+    
+    #porc p {
+      position: relative;
+      font-size: 3.5rem;
+      font-weight: 500;
+      color: #7c5a56;
+      animation: porcentagem 2s steps(3) infinite;
+      white-space: nowrap;
+  
+      bottom: 6.5rem;
+      left:1rem;
+    
+      text-decoration: none;
+      overflow: hidden;
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    @keyframes porcentagem {
+      from {
+        width: 0;
+      }
+    }
     
     /* #ing1{
     grid-area: foto1;
@@ -685,6 +664,8 @@ footer{
 
   #ing2>#logo1{
     width: 50rem;
+    position: relative;
+    right: 1rem;
 }
   
   /* #ing2>#logo1{
