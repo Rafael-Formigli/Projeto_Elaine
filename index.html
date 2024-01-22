@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./teste_Display_Grid.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,17 +18,13 @@
 <body>
     <div id="container">
         <header>
-            <div id="itens-header">
+            <div id="simbolo-marca">
+                <img id="submarca" src="./assets/SIMBOLO SEM FUNDO.png"
+                    alt="Simbolo da Logo marca de Dr.ª Elaine Formigli, uma letra E e uma letra f alonda formando uma imagem ondulada neste alongamento." />
+            </div>
 
-                <div id="simbolo-marca">
-                    <img id="submarca" src="./assets/SIMBOLO SEM FUNDO.png"
-                        alt="Simboloda Logo marca de Dr.ª Elaine Formigli, uma letra E e uma letra f alonda formando uma imagem ondulada neste alongamento." />
-                </div>
-
-                <div id="menu-icon" onclick="alternarNav()">
-                    <img id="menu-B" src="./assets/menu.png" alt="Ícone de menu com três pequenas linhas horizontais">
-                </div>
-
+            <div id="menu-icon" onclick="alternarNav()">
+                <img id="menu-B" src="./assets/menu.png" alt="Ícone de menu com três pequenas linhas horizontais">
             </div>
 
             <nav>
@@ -36,7 +32,8 @@
                     <li class="titulo_menu"><a href="./a_Clinica.html"><strong>A CLÍNICA</strong></a></li>
                     <li class="titulo_menu" onclick="alternarSubMenu(this)"><strong>PROTOCOLOS CAPILARES</strong>
                         <ul class="submenu">
-                            <li><a href="./microagulhamento_com_Drug_Delivery_Capilar.html">Microagulhamento com Drug Delivery</a>
+                            <li><a href="./microagulhamento_com_Drug_Delivery_Capilar.html">Microagulhamento com Drug
+                                    Delivery</a>
                             </li>
                             <li><a href="./intradermoterapia.html">Intradermoterapia</a></li>
                         </ul>
@@ -95,14 +92,19 @@
         </section>
 
         <main>
-            <article id="ing1">
+            <article class="ing1">
                 <img id="elaine1" src="./assets/elaine_foto_um.png" alt="">
             </article>
 
-            <div id="ing2">
+            <article id="ing2">
                 <img id="logo1" src="./assets/LOGO-1.png" alt="">
-            </div>
+            </article>
+
+            <article class="ing1">
+                <img id="elaine2" src="./assets/elaine_02.png" alt="">
+            </article>
         </main>
+
 
         <footer>
             <div id="footer1">
@@ -151,13 +153,13 @@
             </div>
 
             <div id="footer2">
-                <p><strong>&copy; Rafael Formigli Programação.</strong></p>
+                <p>&copy; Rafael Formigli Programação.</p>
             </div>
         </footer>
 
     </div>
 
-    <script src="./script.js">
+    <script src="./script_teste_Display_Grid.js">
 
     </script>
 </body>
