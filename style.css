@@ -28,11 +28,10 @@ body{
     display: grid;
     grid-template-areas: 
                         "header  header  header" 
-                        "  .       .     section" 
                         "main    main    main" 
                         "footer  footer  footer";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 6rem auto auto 14.7rem;
+    grid-template-rows: 6rem auto 14.7rem;
 }
 
 /* Estilização do header */
@@ -158,20 +157,34 @@ header{
     align-items: center;
   }
 
-  /* Estilização do Main */
 
-section{
-    grid-area: section;
+/* Estilização do Main */
+
+
+main{
+
+    grid-area: main;
+    grid-template-areas: 
+                        "foto1"
+                        "logo1"; 
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
 
     display: flex;
-    justify-content: end;
-    align-items: flex-start;
-}
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+  }
 
-  
+  #container-leads{
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+    z-index: 1000;
+  }
+
   #leads img {
     width: 8.5rem;
-    margin: 3rem;
   }
   
   #porc {
@@ -186,8 +199,8 @@ section{
     animation: porcentagem 2s steps(3) infinite;
     white-space: nowrap;
 
-    bottom: 9.5rem;
-    left: 4rem;
+    bottom: 6.5rem;
+    left:1rem;
   
     text-decoration: none;
     overflow: hidden;
@@ -204,21 +217,6 @@ section{
     }
   }
 
-main{
-
-    grid-area: main;
-    grid-template-areas: 
-                        "foto1"
-                        "logo1"; 
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-     
-  }
 
 .ing1{
 grid-area: foto1;
@@ -230,8 +228,8 @@ grid-area: foto1;
 }
 
 .ing1>#elaine2{
-  width: 20rem;
-  margin-top: 1rem;
+  width: 29rem;
+  margin-top: 2rem;
 }
 
 #ing2{
@@ -243,8 +241,7 @@ grid-area: foto1;
 }
 
 #ing2>#logo1{
-    width: 28rem;
-    margin-bottom: 1rem;
+    width: 26rem;
 }
 
 /* Estilização do footer */
