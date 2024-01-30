@@ -462,13 +462,14 @@ footer {
   }
 
   .ing1 {
-    margin-top: 3.5rem;
+    margin-top: 7rem;
   }
 
   .ing1>#elaine1 {
     display: flex;
-    width: 35rem;
+    width: 30rem;
     margin-right: 10rem;
+
   }
 
   .ing1>#elaine2 {
